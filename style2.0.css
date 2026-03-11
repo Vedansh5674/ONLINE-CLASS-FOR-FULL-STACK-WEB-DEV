@@ -1,0 +1,29 @@
+/* body{
+    background-color: lightcoral;
+
+}
+
+@media only screen and (max-width:600px){
+    body{
+        background-color: lightblue;
+    }
+} */
+
+.header{
+    border: 1px solid red;
+    padding: 15px;
+}
+.menu{
+    width: 25%;
+    float: left;
+    padding: 15px;
+    border: 1px solid red;
+
+}
+.main{
+    width: 75px;
+    float: left;
+    padding: 15px;
+    border: 1px solid red;
+}
+

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vedansh's Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .fade-in {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: all 0.6s ease-out;
+    }
+    .fade-in.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    .skill-icon {
+      transition: transform 0.3s ease;
+    }
+    .skill-icon:hover {
+      transform: scale(1.2) rotate(5deg);
+    }
+  </style>
+</head>
+<body class="bg-gray-100 text-gray-800 scroll-smooth">
+
+  <!-- Navigation -->
+  <nav class="bg-white shadow fixed w-full z-10">
+    <div class="max-w-6xl mx-auto px-4 py-3 flex justify-between items-center">
+      <h1 class="text-xl font-bold">Vedansh</h1>
+      <div class="space-x-4">
+        <a href="#about" class="hover:text-blue-500">About</a>
+        <a href="#skills" class="hover:text-blue-500">Skills</a>
+        <a href="#projects" class="hover:text-blue-500">Projects</a>
+        <a href="#contact" class="hover:text-blue-500">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="h-screen flex items-center justify-center bg-gradient-to-r from-blue-200 to-purple-300">
+    <div class="text-center">
+      <h2 class="text-4xl font-bold mb-4">Hi, I'm Vedansh 👋</h2>
+      <p class="text-xl">I build interactive web experiences with logic and creativity.</p>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="max-w-4xl mx-auto py-20 px-4 fade-in">
+    <h2 class="text-3xl font-semibold mb-4">About Me</h2>
+    <p>I love turning ideas into visual, interactive projects — from animated galleries to scheduling algorithms. I blend backend logic with frontend flair to make coding fun and accessible.</p>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" class="max-w-4xl mx-auto py-20 px-4 fade-in">
+    <h2 class="text-3xl font-semibold mb-6">Skills</h2>
+    <div class="grid grid-cols-2 sm:grid-cols-4 gap-6 text-center">
+      <div class="skill-icon text-blue-600 text-4xl">💻<p class="mt-2">Java</p></div>
+      <div class="skill-icon text-yellow-500 text-4xl">🐍<p class="mt-2">Python</p></div>
+      <div class="skill-icon text-purple-600 text-4xl">⚙️<p class="mt-2">JavaScript</p></div>
+      <div class="skill-icon text-pink-500 text-4xl">🎨<p class="mt-2">CSS</p></div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="max-w-4xl mx-auto py-20 px-4 fade-in">
+    <h2 class="text-3xl font-semibold mb-6">Projects</h2>
+    <div class="grid md:grid-cols-2 gap-6">
+      <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition">
+        <h3 class="text-xl font-bold mb-2">Animated Gallery</h3>
+        <p>Filterable and animated gallery using CSS Grid and JavaScript.</p>
+      </div>
+      <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition">
+        <h3 class="text-xl font-bold mb-2">Scheduling Algorithm</h3>
+        <p>Java/Python implementation with visual timeline output.</p>
+      </div>
+      <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition">
+        <h3 class="text-xl font-bold mb-2">Interactive Quiz</h3>
+        <p>Responsive quiz with score tracking and animated feedback.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="max-w-4xl mx-auto py-20 px-4 fade-in">
+    <h2 class="text-3xl font-semibold mb-4">Contact</h2>
+    <p>Email: vedansh@example.com</p>
+    <p>GitHub: <a href="https://github.com/vedansh" class="text-blue-600 hover:underline">github.com/vedansh</a></p>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-white text-center py-6">
+    &copy; 2025 Vedansh. Built with 💡 and 💻.
+  </footer>
+
+  <script>
+    // Scroll animation
+    const fadeEls = document.querySelectorAll('.fade-in');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.1 });
+
+    fadeEls.forEach(el => observer.observe(el));
+  </script>
+
+</body>
+</html>

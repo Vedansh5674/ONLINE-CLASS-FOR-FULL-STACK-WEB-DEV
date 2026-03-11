@@ -1,0 +1,141 @@
+ /* *{
+    background-color: cadetblue;
+    text-align: center;
+ }
+ 
+ 
+ 
+ p,h1,h2{
+    background-color: yellow;
+    color: red;
+ } */
+
+
+
+
+
+
+
+
+
+
+/* 
+ .main{
+   font-size: 36px;
+   font-weight: bold;
+   text-align: center;
+
+ }
+ .first{
+   margin-left: 60px;
+   border: 50px solid blue;
+   width: 300px;
+   height: 200px;
+   text-align: center;
+ }
+
+ .first1{
+   font-size: 42px;
+   font-weight: bold;
+   color: blueviolet;
+   margin-top: 60px;
+   background-color: chartreuse;
+
+ }
+
+ .first2{
+   font-size: 18px;
+   font-weight: bold;
+   background-color: aquamarine;
+ } */
+
+
+
+/* 
+ .border{
+   border-top-left-radius: 250px ;
+   border-bottom-right-radius: 250px;
+   border-spacing: 12px;
+   background-color: cadetblue;
+   padding: 50px;
+   width: 300px;
+   height: 200px;
+   border: 6px solid red;
+   font-size: 25px;
+
+ } */
+
+
+
+/* property overflow of CSS  */
+/* 
+ p{
+  background-color: darksalmon;
+  width: 125px;
+  height: 125px;
+  border: 2px solid black;
+  overflow: auto;
+  opacity: 1.1;
+ } */
+
+
+/* 
+ .flex-container{
+  display: flex;
+  justify-content: space-evenly;
+  background-color: chocolate;
+ }
+
+ .flex-container>div{
+  background-color: blueviolet;
+  width: 100px;
+  margin: 10px;
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+  line-height: 75px;
+ } */
+  /* div{
+    width: 100px;
+    height: 100px;
+    background-color: green;
+    position: relative;
+    animation: first 4s linear 2s infinite alternate;
+    /* animation-name: first; */
+    /* animation-duration: 4s;
+    animation-iteration-count: 4; */ 
+    /* animation-direction: alternate-reverse; */
+    /* animation-fill-mode: forwards; */
+/*     
+  } */
+
+   /* @keyframes first{
+    0%{
+      background-color: green;
+      left: 0px;
+      top: 0px;
+    }
+    25%{
+      background-color: aliceblue;
+      left: 200px;
+      top: 0%;
+    }
+    50%{
+      background-color: aliceblue;
+      left: 200px;
+      top: 200px;
+    }
+    75%{
+      background-color: aliceblue;
+      left: 0px;
+      top: 200px;
+    }
+    100%{
+      background-color: yellow;
+      left: 0px;
+      top: 0px;
+    }
+    
+   }
+  
+     */
